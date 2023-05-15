@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - checking non empty</title>
+<link rel='stylesheet' href='form-style.css' type='text/css' />
+</head>
+<body onload='document.form1.text1.focus()'>
+<div class="mail">
+<p>Enter Userid [between 6 to 8 characters]</p>
+<form name="form1" action="#">
+<ul>
+<li>Username:<input type='text' name='text1'/></li>
+<br>
+<br>
+
+    <li>  Enter PIN [only alphanumeric] <input type="text" name="text1" placeholder="Enter Pin"> </li> 
+    <br>
+    <br>
+
+
+
+       <li><select name="states" id="states">
+            <option value="mh" selected>Maharashtra</option>
+            <option value="kn">Karnataka</option>
+            <option value="up">U.P</option>
+            <option value="gj">Gujrat</option>
+          </select></li> 
+
+
+          <br>
+          <br>
+
+          <li>
+            <input type="radio" id="html" name="fav_product" value="HTML">
+            <label for="html">Milk</label><br>
+            <input type="radio" id="css" name="fav_product" value="CSS">
+            <label for="css">Butter</label><br>
+            <input type="radio" id="javascript" name="fav_product" value="JavaScript">
+            <label for="javascript">Chees</label>
+
+          </li>
+
+          <br>
+          <br>
+
+          <li class="submit"it"><input type="submit" name="submit" value="Submit" onclick="stringlength(document.form1.text1,6,8,name)"/></li>
+          
+</form>
+</ul>
+</div>
+<script src="Fake.js"></script>
+</body>
+</html>
