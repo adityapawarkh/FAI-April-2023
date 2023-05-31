@@ -1,0 +1,10 @@
+<h2>Menu</h2>
+
+<div *ngFor="let item of menuItems">
+  <h3>{{ item.name }}</h3>
+  <p>Price: {{ item.price }}</p>
+  <p>{{ item.description }}</p>
+  <button (click)="addToCart(item)">Add to Cart</button>
+  <button routerLink="/menu/{{ item.id }}">View Details</button>
+  <button routerLink="/edit/{{ item.id }}">Edit</button>
+</div>

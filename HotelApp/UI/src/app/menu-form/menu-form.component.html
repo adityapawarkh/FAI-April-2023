@@ -1,0 +1,18 @@
+<h2>Edit Menu Item</h2>
+
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label>Name:</label>
+    <input type="text" name="name" [(ngModel)]="menuItem.name" required>
+  </div>
+  <div>
+    <label>Price:</label>
+    <input type="number" name="price" [(ngModel)]="menuItem.price" required>
+  </div>
+  <div>
+    <label>Description:</label>
+    <textarea name="description" [(ngModel)]="menuItem.description" required></textarea>
+  </div>
+  <button type="submit">Save</button>
+</form>
+

@@ -1,0 +1,11 @@
+<h2>Cart</h2>
+
+<div *ngFor="let item of cartItems">
+  <h3>{{ item.name }}</h3>
+  <p>Price: {{ item.price }}</p>
+  <p>Quantity: {{ item.quantity }}</p>
+</div>
+
+<h3>Total: {{ calculateTotal() }}</h3>
+<button (click)="generateBill()">Generate Bill</button>
+
